@@ -9,7 +9,7 @@ import Foundation
 
 /*
 Model for the JSON like below
-https://api.openweathermap.org/data/2.5/forecast?lat=16.180597&lon=81.124883&appid=df5baa7db19cc94129443d36bb458d95
+https://api.openweathermap.org/data/2.5/forecast?lat=16.180597&lon=81.124883&appid={APIKey}
  {
    "cod": "200",
    "message": 0,
