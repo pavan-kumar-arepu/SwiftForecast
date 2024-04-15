@@ -15,6 +15,8 @@
 		0B8185AF2BCDA1E30067499B /* SwiftForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185AE2BCDA1E30067499B /* SwiftForecastUITests.swift */; };
 		0B8185B12BCDA1E30067499B /* SwiftForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185B02BCDA1E30067499B /* SwiftForecastUITestsLaunchTests.swift */; };
 		0B8185C52BCDA8C80067499B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185C42BCDA8C80067499B /* Constants.swift */; };
+		0B8185C72BCDAB5C0067499B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B8185C62BCDAB5B0067499B /* README.md */; };
+		0B8185C92BCDABDF0067499B /* TodoTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185C82BCDABDF0067499B /* TodoTasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		0B8185AE2BCDA1E30067499B /* SwiftForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForecastUITests.swift; sourceTree = "<group>"; };
 		0B8185B02BCDA1E30067499B /* SwiftForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0B8185C42BCDA8C80067499B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0B8185C62BCDAB5B0067499B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0B8185C82BCDABDF0067499B /* TodoTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		0B8185872BCDA1DF0067499B = {
 			isa = PBXGroup;
 			children = (
+				0B8185C62BCDAB5B0067499B /* README.md */,
+				0B8185CA2BCDACA70067499B /* Repository */,
 				0B8185C32BCDA4190067499B /* Model */,
 				0B8185C22BCDA3F30067499B /* Resources */,
 				0B8185C12BCDA3AE0067499B /* View */,
@@ -153,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0B8185C42BCDA8C80067499B /* Constants.swift */,
+				0B8185C82BCDABDF0067499B /* TodoTasks.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -176,6 +183,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0B8185CA2BCDACA70067499B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8185C72BCDAB5C0067499B /* README.md in Resources */,
 				0B81859B2BCDA1E20067499B /* Preview Assets.xcassets in Resources */,
 				0B8185982BCDA1E20067499B /* Assets.xcassets in Resources */,
 			);
@@ -310,6 +325,7 @@
 			files = (
 				0B8185962BCDA1DF0067499B /* ContentView.swift in Sources */,
 				0B8185942BCDA1DF0067499B /* SwiftForecastApp.swift in Sources */,
+				0B8185C92BCDABDF0067499B /* TodoTasks.swift in Sources */,
 				0B8185C52BCDA8C80067499B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
