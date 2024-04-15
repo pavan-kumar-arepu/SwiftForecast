@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import GooglePlaces
 
 @main
 struct SwiftForecastApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear{
+                    GMSPlacesClient.provideAPIKey("AIzaSyCC2XlY1AuGOcyEVipEglPo17uFOhRVZuw")
+                }
         }
     }
 }
