@@ -74,6 +74,12 @@
 		0B8185872BCDA1DF0067499B = {
 			isa = PBXGroup;
 			children = (
+				0B8185C32BCDA4190067499B /* Model */,
+				0B8185C22BCDA3F30067499B /* Resources */,
+				0B8185C12BCDA3AE0067499B /* View */,
+				0B8185C02BCDA39F0067499B /* Utils */,
+				0B8185BF2BCDA38A0067499B /* ViewModel */,
+				0B8185BD2BCDA3780067499B /* APILayer */,
 				0B8185922BCDA1DF0067499B /* SwiftForecast */,
 				0B8185A32BCDA1E20067499B /* SwiftForecastTests */,
 				0B8185AD2BCDA1E30067499B /* SwiftForecastUITests */,
@@ -125,6 +131,48 @@
 				0B8185B02BCDA1E30067499B /* SwiftForecastUITestsLaunchTests.swift */,
 			);
 			path = SwiftForecastUITests;
+			sourceTree = "<group>";
+		};
+		0B8185BD2BCDA3780067499B /* APILayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APILayer;
+			sourceTree = "<group>";
+		};
+		0B8185BF2BCDA38A0067499B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B8185C02BCDA39F0067499B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0B8185C12BCDA3AE0067499B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B8185C22BCDA3F30067499B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B8185C32BCDA4190067499B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
