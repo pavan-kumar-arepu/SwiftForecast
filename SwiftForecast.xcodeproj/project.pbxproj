@@ -17,6 +17,7 @@
 		0B8185C52BCDA8C80067499B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185C42BCDA8C80067499B /* Constants.swift */; };
 		0B8185C72BCDAB5C0067499B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B8185C62BCDAB5B0067499B /* README.md */; };
 		0B8185C92BCDABDF0067499B /* TodoTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185C82BCDABDF0067499B /* TodoTasks.swift */; };
+		0B8185CC2BCDB53F0067499B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185CB2BCDB53F0067499B /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		0B8185C42BCDA8C80067499B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B8185C62BCDAB5B0067499B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B8185C82BCDABDF0067499B /* TodoTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTasks.swift; sourceTree = "<group>"; };
+		0B8185CB2BCDB53F0067499B /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		0B8185C32BCDA4190067499B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0B8185CB2BCDB53F0067499B /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				0B8185942BCDA1DF0067499B /* SwiftForecastApp.swift in Sources */,
 				0B8185C92BCDABDF0067499B /* TodoTasks.swift in Sources */,
 				0B8185C52BCDA8C80067499B /* Constants.swift in Sources */,
+				0B8185CC2BCDB53F0067499B /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
