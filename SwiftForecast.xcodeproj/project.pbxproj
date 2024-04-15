@@ -19,6 +19,8 @@
 		0B8185C92BCDABDF0067499B /* TodoTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185C82BCDABDF0067499B /* TodoTasks.swift */; };
 		0B8185CC2BCDB53F0067499B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185CB2BCDB53F0067499B /* WeatherModel.swift */; };
 		0B8185CE2BCDB98F0067499B /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185CD2BCDB98F0067499B /* WeatherAPIService.swift */; };
+		0B8185D12BCDC1680067499B /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 0B8185D02BCDC1680067499B /* GooglePlaces */; };
+		0B8185D32BCDC20A0067499B /* GooglePlacesPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B8185D22BCDC20A0067499B /* GooglePlacesPrivacy.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		0B8185C82BCDABDF0067499B /* TodoTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTasks.swift; sourceTree = "<group>"; };
 		0B8185CB2BCDB53F0067499B /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		0B8185CD2BCDB98F0067499B /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
+		0B8185D22BCDC20A0067499B /* GooglePlacesPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlacesPrivacy.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8185D12BCDC1680067499B /* GooglePlaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,7 @@
 		0B8185872BCDA1DF0067499B = {
 			isa = PBXGroup;
 			children = (
+				0B8185D22BCDC20A0067499B /* GooglePlacesPrivacy.bundle */,
 				0B8185C62BCDAB5B0067499B /* README.md */,
 				0B8185CA2BCDACA70067499B /* Repository */,
 				0B8185C32BCDA4190067499B /* Model */,
@@ -214,6 +219,9 @@
 			dependencies = (
 			);
 			name = SwiftForecast;
+			packageProductDependencies = (
+				0B8185D02BCDC1680067499B /* GooglePlaces */,
+			);
 			productName = SwiftForecast;
 			productReference = 0B8185902BCDA1DF0067499B /* SwiftForecast.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +294,9 @@
 				Base,
 			);
 			mainGroup = 0B8185872BCDA1DF0067499B;
+			packageReferences = (
+				0B8185CF2BCDC1680067499B /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+			);
 			productRefGroup = 0B8185912BCDA1DF0067499B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8185C72BCDAB5C0067499B /* README.md in Resources */,
+				0B8185D32BCDC20A0067499B /* GooglePlacesPrivacy.bundle in Resources */,
 				0B81859B2BCDA1E20067499B /* Preview Assets.xcassets in Resources */,
 				0B8185982BCDA1E20067499B /* Assets.xcassets in Resources */,
 			);
@@ -659,6 +671,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B8185CF2BCDC1680067499B /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B8185D02BCDC1680067499B /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B8185CF2BCDC1680067499B /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B8185882BCDA1DF0067499B /* Project object */;
 }

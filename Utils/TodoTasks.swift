@@ -23,7 +23,7 @@ import Foundation
  9. Create VM's and consume data from Repository(where data is always ready)
  10. Create two SwiftUI Views SearchWeatherView and DetailedWeatherView
  11. SearchWeatherView responsible to search the "City" from the search field -
-    Based on city search, need to fetch its Lat, Lan, by using GoogleGeoCodingAPI or any otherAPI..
+    Based on city search, need to fetch its Lat, Lan, by using GoogleGeoCodingAPI or any otherAPI..(Google Places API)
  12. Once Lat, Lan retrived from GoogleAPI, need to hit https://api.openweathermap.org/data/2.5/forecast?lat=16.180597&lon=81.124883&appid={APIKey}
  13. Based on the data retrived, APILayer will parse and keep the real weatherObject ready. Repository will facility data to DetailedWeatherView VM's to render DetailedWeatherView
  */
