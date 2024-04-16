@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Text("UI Yet to Develop")
-        .padding()
+        WeatherView()
+        .edgesIgnoringSafeArea(.vertical)
     }
 }
 
