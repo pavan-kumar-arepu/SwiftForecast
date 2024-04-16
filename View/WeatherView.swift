@@ -19,7 +19,25 @@ struct WeatherView: View {
                            endPoint: .bottom)
             .edgesIgnoringSafeArea(.vertical)
             
-            Text("UI Yet To Develop")
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 8) {
+                    Text("Hyderabad")
+                        .font(.title)
+                    
+                    Text(weatherViewModel.currentTemperature.dropLast())
+                        .font(.system(size: 72))
+                        .fontWeight(.light)
+                    
+                    Text(weatherViewModel.currentCondition)
+                    
+                    Text(weatherViewModel.dailyHighLow)
+                    
+                }
+                .foregroundColor(.white)
+                .padding()
+            }
+                
+            
             // ScrollView to show Major Temp, Condition and Low and High values
             
             
