@@ -6,7 +6,7 @@ A quick weather Forecast using SwiftUI
 SwiftForecast is a mobile application that provides users with real-time weather updates for their current location or any city worldwide. The app offers hourly and 5-day forecasts, allowing users to stay informed about upcoming weather conditions.
 
 ## Motivation/Inspiration
-Apple WeatherAppUI is an inspiration to design this app UI(but with limited functionality)
+Apple WeatherApp(for UI) & WeatherAPI(for data) is an inspiration to design & Architect this app(but with limited functionality)
 
 ## Features
 
