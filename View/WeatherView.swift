@@ -19,6 +19,8 @@ struct WeatherView: View {
                            endPoint: .bottom)
             .edgesIgnoringSafeArea(.vertical)
             
+            // ScrollView to show Major Temp, Condition and Low and High values
+
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 8) {
                     Text("Hyderabad")
@@ -35,14 +37,38 @@ struct WeatherView: View {
                 }
                 .foregroundColor(.white)
                 .padding()
+                
+                // Provide a VStack to show Hourly data
+
+                VStack(alignment: .leading) {
+                    Label("hourly forecast".uppercased(), systemImage:  "clock")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .padding([.top, .leading])
+                    
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(weatherViewModel.hourlyForecast, id: \.time) {
+                                weather in
+                                VStack(spacing: 12) {
+                                    Text(weather.time)
+                                        .font(.caption)
+                                    Image(systemName: "\(weather.symbolName).fill")
+                                        .font(.title2)
+                                        .symbolRenderingMode(.multicolor)
+                                    
+                                    Text(weather.temperature)
+                                        .fontWeight(.semibold)
+                                }
+                                .padding()
+                            }
+                        }
+                    }
+                }
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8))
+                .padding()
             }
                 
-            
-            // ScrollView to show Major Temp, Condition and Low and High values
-            
-            
-            // Provide a VStack to show Hourly data
-            
             
             // Provide a VStack to show 5 days forecast data
         }
