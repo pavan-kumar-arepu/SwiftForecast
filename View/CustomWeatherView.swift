@@ -1,75 +1,91 @@
 //
 //  WeatherView.swift
-//  SwiftForecast
+//  WeatherKitApp
 //
-//  Created by Pavankumar Arepu on 16/04/24.
+//  Created by Arepu Pavan Kumar on 2024-04-16.
 //
-
-/*
 
 import Foundation
 import SwiftUI
+import CoreLocation
 
 /**
- A SwiftUI view displaying weather information, including current conditions, hourly forecast, and 5-day forecast.
+ A custom view for displaying weather information.
+ 
+ This view presents weather data including current conditions, hourly forecast, and 5-days forecast. It allows users to see detailed weather information based on their location or a selected coordinate.
+ 
+ # Usage
+ Initialize the view by providing a coordinate representing the location for which weather data is fetched. The view fetches weather data based on the provided coordinate.
+ 
+ # Example:
+ let defaultLocation = CLLocation(latitude: 59.363339, longitude: 18.012605)
+ CustomWeatherView(coordinate: CLLocationCoordinate2D(latitude: defaultLocation.coordinate.latitude,
+ longitude: defaultLocation.coordinate.longitude))
+ 
+ - Author:  ArepuPavanKumar
  */
-struct WeatherView: View {
+struct CustomWeatherView: View {
     
-    // MARK: State
+    // MARK: Properties
     
-    /// The view model responsible for managing weather data.
-    @StateObject private var weatherViewModel = WeatherViewModel()
+    /// The coordinate representing the location for which weather data is fetched.
+    let coordinate: CLLocationCoordinate2D
+    
+    /// The view model responsible for fetching weather data.
+    @StateObject private var weatherViewModel: WeatherViewModel
+    
+    // MARK: Initialization
+    
+    /// Initializes the view with the specified coordinate.
+    /// - Parameter coordinate: The coordinate representing the location for which weather data is fetched.
+    init(coordinate: CLLocationCoordinate2D) {
+        self.coordinate = coordinate
+        self._weatherViewModel = StateObject(wrappedValue: WeatherViewModel(coordinate: coordinate))
+    }
     
     // MARK: Body
     
     var body: some View {
         ZStack {
-            // Apply gradient background to the entire view
+            // Background gradient
             LinearGradient(gradient: Gradient(colors: [.blue, .blue, .green]),
                            startPoint: .top,
                            endPoint: .bottom)
             .edgesIgnoringSafeArea(.vertical)
             
-            // Scrollable view to display weather information
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 8) {
-                    // Display city name
-                    Text("Hyderabad")
+                    Text(weatherViewModel.cityName)
                         .font(.title)
                     
-                    // Display current temperature
                     Text(weatherViewModel.currentTemperature.dropLast())
                         .font(.system(size: 72))
                         .fontWeight(.light)
                     
-                    // Display current weather condition
                     Text(weatherViewModel.currentCondition)
                     
-                    // Display daily high and low temperatures
                     Text(weatherViewModel.dailyHighLow)
                 }
                 .foregroundColor(.white)
                 .padding()
                 
-                // Display hourly forecast
                 VStack(alignment: .leading) {
-                    Label("hourly forecast".uppercased(), systemImage:  "clock")
+                    Label(Constants.hourlyForecast.uppercased(), systemImage:  Constants.systemClock)
                         .font(.caption)
                         .fontWeight(.bold)
                         .padding([.top, .leading])
                     
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach(weatherViewModel.hourlyForecast, id: \.time) { weather in
+                            ForEach(weatherViewModel.hourlyForecast, id: \.time) {
+                                weather in
                                 VStack(spacing: 12) {
-                                    // Display time
                                     Text(weather.time)
                                         .font(.caption)
-                                    // Display weather symbol
                                     Image(systemName: "\(weather.symbolName).fill")
                                         .font(.title2)
                                         .symbolRenderingMode(.multicolor)
-                                    // Display temperature
+                                    
                                     Text(weather.temperature)
                                         .fontWeight(.semibold)
                                 }
@@ -81,32 +97,28 @@ struct WeatherView: View {
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8))
                 .padding()
                 
-                // Display 5-day forecast
                 VStack(alignment: .leading) {
-                    Label("5-days forecast".uppercased(), systemImage: "clock")
+                    Label(Constants.daywiseForecast.uppercased(), systemImage: Constants.systemClock)
                         .font(.caption)
                         .fontWeight(.bold)
                         .padding([.top, .leading])
                     
-                    VStack {
-                        ForEach(weatherViewModel.fiveDayForecast, id: \.self) { weather in
+                    VStack{
+                        ForEach(weatherViewModel.fiveDayForecast, id: \.self) {
+                            weather in
                             HStack {
-                                // Display day
                                 Text(weather.day)
                                     .frame(width: 48, alignment: .leading)
                                 
-                                // Display weather symbol
                                 Image(systemName: "\(weather.symbolName).fill")
                                     .font(.title2)
                                     .padding(.horizontal)
                                     .symbolRenderingMode(.multicolor)
                                 
-                                // Display low temperature
                                 Text(weather.lowTemperature)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.gray)
                                 
-                                // Display temperature range
                                 ZStack(alignment: .trailing) {
                                     Capsule()
                                     
@@ -117,11 +129,9 @@ struct WeatherView: View {
                                 }
                                 .frame(height: 6)
                                 
-                                // Display high temperature
                                 Text(weather.highTemperature)
                                     .fontWeight(.semibold)
-                            }
-                            .padding()
+                            }.padding()
                         }
                     }
                 }
@@ -132,9 +142,13 @@ struct WeatherView: View {
     }
 }
 
-struct WeatherView_Previews: PreviewProvider {
-    static var previews: some View {
-        WeatherView()
-    }
+// MARK: Preview
+
+struct CustomWeatherView_Previews: PreviewProvider {
+   
+   static var previews: some View {
+       let defaultLocation = CLLocation(latitude: 59.363339, longitude: 18.012605)
+       CustomWeatherView(coordinate: CLLocationCoordinate2D(latitude: defaultLocation.coordinate.latitude,
+                                                      longitude: defaultLocation.coordinate.longitude))
+   }
 }
-*/
