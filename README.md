@@ -23,19 +23,6 @@ SwiftForecast is a mobile application that provides users with real-time weather
 ![DubaiForecast](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/8f129005-1ed5-47cd-9370-93d95bb20795)
 ![SearchDubai](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/212aaa38-5cca-4fb1-a200-d6c759adc43e)
 
-<table>
-  <tr>
-    <td><img src="" alt="[Default Current Weather](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/cf01f9d9-7dbc-465d-bb93-0fe1f5ec3faa)" style="max-width: 300px;"></td>
-    <td><img src="[screenshots/BeforeSearch.pn](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/934122fb-ade8-4aef-bce2-941be6cfa0b9)g" alt="Before Search" style="max-width: 300px;"></td>
-    <td><img src="[screenshots/WhileSearch.png](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/85d90243-eafc-4748-93a4-6f53fb6dccc6)" alt="While Search" style="max-width: 300px;"></td>
-  </tr>
-  <tr>
-    <td><img src="[screenshots/HyderabadForecast.png](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/b947cb9c-f366-4414-a0b2-4f598c048eff)" alt="Hyderabad Forecast" style="max-width: 300px;"></td>
-    <td><img src="[screenshots/SearchDubai.png](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/8f129005-1ed5-47cd-9370-93d95bb20795)" alt="Search Dubai" style="max-width: 300px;"></td>
-    <td><img src="[screenshots/DubaiForecast.png](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/212aaa38-5cca-4fb1-a200-d6c759adc43e)" alt="Dubai Forecast" style="max-width: 300px;"></td>
-  </tr>
-</table>
-
 ## Technologies Used
 
 - SwiftUI: Used for building the user interface.
