@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4029992BCEC77B005CE54E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4029982BCEC77B005CE54E /* WeatherViewModel.swift */; };
 		0B8185942BCDA1DF0067499B /* SwiftForecastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185932BCDA1DF0067499B /* SwiftForecastApp.swift */; };
 		0B8185962BCDA1DF0067499B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8185952BCDA1DF0067499B /* ContentView.swift */; };
 		0B8185982BCDA1E20067499B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8185972BCDA1E20067499B /* Assets.xcassets */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4029972BCEC58A005CE54E /* SwiftForecast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftForecast.entitlements; sourceTree = "<group>"; };
+		0B4029982BCEC77B005CE54E /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		0B8185902BCDA1DF0067499B /* SwiftForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8185932BCDA1DF0067499B /* SwiftForecastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForecastApp.swift; sourceTree = "<group>"; };
 		0B8185952BCDA1DF0067499B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,9 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4029962BCEC401005CE54E /* WeatherKit */ = {
+			isa = PBXGroup;
+			children = (
+				0B4029972BCEC58A005CE54E /* SwiftForecast.entitlements */,
+			);
+			path = WeatherKit;
+			sourceTree = "<group>";
+		};
 		0B8185872BCDA1DF0067499B = {
 			isa = PBXGroup;
 			children = (
+				0B4029962BCEC401005CE54E /* WeatherKit */,
 				0B8185D22BCDC20A0067499B /* GooglePlacesPrivacy.bundle */,
 				0B8185C62BCDAB5B0067499B /* README.md */,
 				0B8185CA2BCDACA70067499B /* Repository */,
@@ -163,6 +175,7 @@
 		0B8185BF2BCDA38A0067499B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0B4029982BCEC77B005CE54E /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -347,6 +360,7 @@
 				0B8185942BCDA1DF0067499B /* SwiftForecastApp.swift in Sources */,
 				0B8185C92BCDABDF0067499B /* TodoTasks.swift in Sources */,
 				0B8185CE2BCDB98F0067499B /* WeatherAPIService.swift in Sources */,
+				0B4029992BCEC77B005CE54E /* WeatherViewModel.swift in Sources */,
 				0B8185C52BCDA8C80067499B /* Constants.swift in Sources */,
 				0B8185CC2BCDB53F0067499B /* WeatherModel.swift in Sources */,
 			);
@@ -504,13 +518,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftForecast/SwiftForecast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftForecast/Preview Content\"";
-				DEVELOPMENT_TEAM = D2KUN44K2A;
+				DEVELOPMENT_TEAM = G3EPARN5D4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftForecast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ForecastSwiftly;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires location to work";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Show your location on the map";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -520,7 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppam.con.SwiftForecast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppam.con.ForecastSwiftly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -533,13 +551,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftForecast/SwiftForecast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftForecast/Preview Content\"";
-				DEVELOPMENT_TEAM = D2KUN44K2A;
+				DEVELOPMENT_TEAM = G3EPARN5D4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftForecast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ForecastSwiftly;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires location to work";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Show your location on the map";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -549,7 +571,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppam.con.SwiftForecast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppam.con.ForecastSwiftly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
