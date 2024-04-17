@@ -19,12 +19,13 @@ Apple WeatherApp(for UI) & WeatherAPI(for data) is an inspiration to design & Ar
 
 ## Screenshots
 
-![DefaultCurrentWeather](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/cf01f9d9-7dbc-465d-bb93-0fe1f5ec3faa)
+![DefaultCurrentWeather](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/f59e516e-6e0a-4543-9a15-d2466c73fb16)
 ![BeforeSearch](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/934122fb-ade8-4aef-bce2-941be6cfa0b9)
 ![WhileSearch](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/85d90243-eafc-4748-93a4-6f53fb6dccc6)
 ![HyderabadForecast](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/b947cb9c-f366-4414-a0b2-4f598c048eff)
 ![DubaiForecast](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/8f129005-1ed5-47cd-9370-93d95bb20795)
 ![SearchDubai](https://github.com/pavan-kumar-arepu/SwiftForecast/assets/13812858/212aaa38-5cca-4fb1-a200-d6c759adc43e)
+
 
 ## Technologies Used
 
